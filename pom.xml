@@ -159,6 +159,9 @@
 			<properties>
 				<profileActive>kafka</profileActive>
 			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 		</profile>
 		<profile>
 			<id>Production</id>
