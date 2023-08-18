@@ -19,6 +19,7 @@ import java.util.List;
  */
 @Data
 @Document(indexName = "iot_warn_history_message")
+//@Document(indexName = "iot_warn_history_message_#{@indexNameGenerator.commonIndex()}") //动态创建索引名字
 public class LiveMessage implements Serializable {
 
 	private static final long serialVersionUID = 8498501025632950288L;
