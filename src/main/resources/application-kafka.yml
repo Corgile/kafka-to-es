@@ -1,0 +1,17 @@
+spring:
+  jackson:
+    time-zone: 'GMT+8'
+    date-format: yyyy-MM-dd HH:mm:ss
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+  kafka:
+    bootstrap-servers:
+      - 172.22.105.146:9092
+      - 172.22.105.147:9092
+      - 172.22.105.38:9092
+      - 172.22.105.39:9092
+      - 172.22.105.150:9092
+    consumer:
+      enable-auto-commit: true
+      group-id: elastic-data-reader
