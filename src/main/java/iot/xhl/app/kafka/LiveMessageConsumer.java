@@ -39,7 +39,7 @@ public class LiveMessageConsumer {
 		currentBuffer.add(message);
 	}
 
-	@Scheduled(fixedDelay = 10, timeUnit = TimeUnit.SECONDS)
+	@Scheduled(fixedDelay = 60, timeUnit = TimeUnit.SECONDS)
 	public void run() {
 		Queue<LiveMessage> currentBuffer = buffer1.getAndSet(buffer2.get());
 		this.msgRepository.saveAll(currentBuffer);
