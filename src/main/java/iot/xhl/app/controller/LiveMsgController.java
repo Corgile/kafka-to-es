@@ -18,9 +18,9 @@ import javax.annotation.Resource;
  */
 
 @RestController
-@Api(tags = "BOOK 接口")
-@RequestMapping("/book")
-public class BookController {
+@Api(tags = "LiveMsg 接口")
+@RequestMapping("/warnMsg")
+public class LiveMsgController {
 
 	@Resource
 	private LiveMsgRepository msgRepository;
@@ -33,7 +33,7 @@ public class BookController {
 		return msgRepository.save(message);
 	}
 
-	@ApiOperation(value = "BOOK Doc 全量查询")
+	@ApiOperation(value = "LiveMsg Doc 全量查询")
 	@GetMapping("/findAll")
 	public Object findAll() {
 		Pageable pageable = PageRequest.of(0, 10);
