@@ -12,11 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-/**
- * @author zp.wei
- * {@code @date} 2021/6/28 15:39
- */
-
 @RestController
 @Api(tags = "LiveMsg 接口")
 @RequestMapping("/warnMsg")

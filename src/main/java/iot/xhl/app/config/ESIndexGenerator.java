@@ -5,10 +5,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-/**
- * @author zp.wei
- * @date 2023/4/21 15:31
- */
+
 @Component("indexNameGenerator")
 public class ESIndexGenerator {
 
