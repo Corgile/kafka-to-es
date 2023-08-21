@@ -38,7 +38,7 @@ public class Knife4jConfig implements WebMvcConfigurer {
 				.title("API 文档")
 				.description("API 文档描述")
 				.termsOfServiceUrl("http://localhost.com/terms")
-				.contact(new Contact("My Name", "https://localhost.com", "your.email@example.com"))
+				.contact(new Contact("好大哥", "https://localhost.com", "hao.da@g.e"))
 				.version("1.0")
 				.build();
 	}

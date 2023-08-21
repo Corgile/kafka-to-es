@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
 @RestController
-@Api(tags = "LiveMsg 接口")
+@Api(tags = "LiveMsg ES接口")
 @RequestMapping("/warnMsg")
 public class LiveMsgController {
 
 	@Resource
 	private LiveMsgRepository msgRepository;
 
-	@ApiOperation(value = "保存一条 LiveMessage Doc 数据")
+	@ApiOperation(value = "保存一条 LiveMessage Doc 数据", response = LiveMessage.class)
 	@PostMapping("/save")
 	public Object save(@RequestBody LiveMsgVO msgVO) {
 		LiveMessage message = new LiveMessage();
